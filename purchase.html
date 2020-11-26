@@ -1,0 +1,181 @@
+<html>
+  <head>
+    <title>Purchase now</title>
+
+    <link rel="stylesheet" href="styles_p.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="banner">
+      <img src="image/logo.png" class="logo" />
+      <div class="banner-text">
+        <p>Nothing like a cup of</p>
+        <h1>World's Finest Tea</h1>
+        <div class="banner-btn">
+          <a href="#"><span></span>Find out</a>
+          <a href="#"><span></span>Read more</a>
+        </div>
+      </div>
+    </section>
+
+
+    <div id="sideNav">
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Types.html">TYPES OF TEA</a></li>
+          <li><a href="Manufacturer.html">SRI LANKAN TEA MANUFACTURES</a></li>
+          <li><a href="purchase.html">BUY NOW</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="menuBtn">
+      <img src="image/menu.png" id="menu" />
+    </div>
+
+    <!----details---->
+    <script src="Purchase.js"></script>
+    <div class="bg">
+      <div class="1st-text">
+        <div class="details">
+          <h1>Place your order</h1>
+        </div>
+
+        <div class="Form">
+          <div class="form1">
+            <div class="form2">
+              <div class="Lebel1">Tea Favoration</div>
+              <select class="Menu" id="Menu">
+                <option value="1000">Dilma</option>
+                <option value="1500" selected>Jones</option>
+                <option value="1000">George Steuart</option>
+                <option value="2000">Malwatte Valley</option>
+                <option value="1000">Prestige Ceylon teas</option>
+                <option value="2000">Empire tea</option>
+              </select>
+            </div>
+            <br />
+            <div class="form2">
+              <div class="1st-label">Select Size</div>
+              <select class="cus" id="Size">
+                <option value="1000">Small</option>
+                <option value="2500" selected>Medium</option>
+                <option value="5000">Large</option>
+              </select>
+            </div>
+            <br />
+            <div class="form2">
+              <div class="1st-label">Packaging type</div>
+              <select class="cus" id="1Type">
+                <option value="1000">Paper Pouches</option>
+                <option value="1500">Tins</option>
+                <option value="2000" selected>Bags</option>
+              </select>
+            </div>
+          </div>
+          <br />
+          <div class="middle-form">
+            <div class="form3">
+              <div class="1st-label">Extras</div>
+              <br />
+              <input type="checkbox" id="mugs" />Mug<br />
+              <input type="checkbox" id="pins" />Silver pin<br />
+              <input type="checkbox" id="woods" />Wooden souvenir<br />
+            </div>
+          </div>
+
+          <br />
+          <div class="buttons">
+            <button type="cart-btn" onclick="onClickAddToOrder()">
+              ADD TO ORDER
+            </button>
+            <button type="cart-btn" onclick="onClickPlaceOrder()">
+              PLACE ORDER
+            </button>
+            <button type="cart-btn" onclick="onClickCheckLoyalty()">
+              CHECK LOYALITY
+            </button>
+            <button type="cart-btn" onclick="onClickAddToFavourite()">
+              ADD TO FAVORITE
+            </button>
+            <button type="cart-btn" onclick="onClickOrderFavourite()">
+              ORDER FAVORITE
+            </button>
+          </div>
+          <br /><br />
+
+          <div id="loyaltyPointsContainer"></div>
+        </div>
+      </div>
+    </div>
+    <form id="show" style="display: none">
+      <table id="tbOrder" width="900px" border="1px">
+        <tr>
+          <th colspan="7">Current Order Details</th>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">Order No</td>
+          <td style="font-weight: bold">Tea choice</td>
+          <td style="font-weight: bold">Packaging type</td>
+          <td style="font-weight: bold">Extras - Mug</td>
+          <td style="font-weight: bold">Extras - Silver pin</td>
+          <td style="font-weight: bold">Extras - souvenir</td>
+
+          <td style="font-weight: bold">Total Amount</td>
+        </tr>
+      </table>
+      <br />
+      <p>Grand Total:</p>
+      <input type="text" id="lblgrandTotal" /> LKR
+    </form>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!--Footers-->
+    <footer class="footer">
+      <div class="L-footer">
+        <h1><img src="" alt="" /></h1>
+
+        <u><h2>ABOUT US</h2></u>
+        <p>
+          We are so glad to give a hand to grow countries economy by providing
+          you the world's Finest tea.
+        </p>
+      </div>
+
+      <ul class="R-footer">
+        <li>
+          <u><h2>CONTACT US</h2></u>
+          <ul class="B1">
+            <li>Address : No.3 A Kotta Rd. Colombo, Sri Lanka.</li>
+            <li>Telephone: +94 567 484 732</li>
+            <li>Email : aradhanarashmi123@gmail.com</li>
+          </ul>
+        </li>
+        <div class="socialM-icon">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-whatsapp"></i>
+          <i class="fa fa-pinterest"></i>
+        </div>
+      </ul>
+    </footer>
+
+    <script src="./js/nav.js"></script>
+  </body>
+</html>

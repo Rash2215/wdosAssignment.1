@@ -1,0 +1,261 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Baskerville', serif;
+
+}
+#banner {
+background: url(image/background.png);
+background-size: cover;
+background-position: center;
+height: 100vh;
+margin-top: 30px;
+}
+
+.logo {
+width: 150px;
+position: absolute;
+top: 20px;
+left: 80px;
+}
+.banner-text {
+text-align: center;
+/* margin: 40px 100px; */
+color: rgb(255, 255, 255);
+/* padding-top: 500px; */
+font-weight: bold;
+}
+.banner-text p{
+  padding-top: 40vh;
+  text-shadow: 1px 1px rgb(0, 0, 0);
+}
+.banner-text h1 {
+font-size: 60px;
+color: #6c9d31;
+text-align: center;
+font-family: "Cinzel", serif;
+font-weight: bold;
+text-shadow: 1px 1px rgb(0, 0, 0);
+}
+.banner-text p {
+font-size: 35px;
+text-align: center;
+}
+.banner-btn {
+margin: 70px auto 0;
+box-align: center;
+}
+.banner-btn a {
+width: 150px;
+text-decoration: none;
+display: inline-block;
+margin: 0 10px;
+padding: 12px 0;
+color: white;
+border: 2px solid #fff;
+text-align: center;
+z-index: 1;
+position: relative;
+transition: color 0.5s;
+font-size: 16px;
+}
+.banner-btn a span {
+width: 0%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: #fff;
+z-index: -1;
+transition: 0.5s;
+}
+.banner-btn a:hover span{
+  width:100%;
+}
+.banner-btn a:hover {
+  color:rgb(171, 184, 102);
+}
+#sideNav{
+  width:250px;
+  height:100vh;
+  position:fixed;
+  right:-250px;
+  top:0;
+  background:#99d9dd;
+  z-index:2;
+  transition:0.5s;
+}
+nav ul li{
+  list-style:none;
+  margin:50px 20px;
+}
+nav ul li a{
+  text-decoration:none;
+  color:#fff;
+}
+#menuBtn {
+/* width: 50px;
+height: 50px; */
+/* #6c9d31; */
+padding: 5px;
+background: #99d9dd;
+text-align: center;
+position: fixed;
+right: 30px;
+top: 20px;
+border-radius: 3px;
+z-index: 3;
+cursor: pointer;
+}
+#menuBtn img {
+width: 40px;
+/* margin-top: 15px; */
+}  
+@media screen and (max-width: 770px){
+  .banner-text h1{
+      font-size: 44px;
+}
+  .banner-btn{
+      margin: 35px auto 0;
+      box-align: center;
+  } 
+  .banner-btn a{
+      display:block;
+      margin:20px auto;
+  }
+  .logo {
+    width: 100px;
+    top: 20px;
+    left: 30px;
+  }
+}
+ 
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+/*-------------footer-------------*/
+.footer{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  color: #fff;
+  background: rgb(89, 206, 200);
+}
+
+.footer > *{
+  flex:  100%;
+}
+.L-footer{
+  margin-right: 9.25em;
+  margin-bottom: 1em;
+}
+h2{
+  font-weight: 600;
+  font-size: 18px;
+}
+.footer ul{
+  list-style: none;
+  padding-left: 8;
+}
+.footer li{
+  line-height: 2em;
+  width: 400;
+}
+.footer a{
+  text-decoration: none;
+}
+
+.R-footer{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 2em;
+}
+
+.R-footer > *{
+    flex:  50%;
+    
+}
+.B1 a{
+   text-decoration: none;
+
+}
+.h-B1{
+  column-count: 2;
+  column-gap: 50.25em;
+
+}
+.R-footer{
+  text-align: left;
+  color: white;
+  padding-top: 10px;
+}
+
+.L-footer p{
+  padding-right: 10%;
+  color: white;
+}
+.socialM-icon{
+    list-style:none;
+    margin:0 100px 0 0;
+    display:inline-block; 
+    size: 50px;
+}
+@media screen and (min-width:600px){
+  .R-footer > *{
+    flex: 1;
+  }
+  .features{
+    flex-grow: 0;
+  }
+  .L-footer{
+    flex: 1 0px;
+
+  }
+  .R-footer{
+    flex: 2 0px;
+  }
+  .socialM-icon{
+      flex:1;
+  }
+}
